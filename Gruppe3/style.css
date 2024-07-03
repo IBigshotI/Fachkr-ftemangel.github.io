@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url("../fileStore/workLife.jpg") no-repeat center center; /* Center the background image */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    z-index: -1; /* Ensure it's behind other content */
+}
+
+#vid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#navContainer {
+    background-color: rgb(4, 4, 61);
+}
+
+.NavbarItem a {
+    color: white !important;
+}
+
+.navbar-left p {
+    color: white !important;
+}
+
+#content1 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    z-index: 2;
+}
+
+.contentContainer {
+    text-align: center;
+}
+
+.smallHeader {
+    font-size: 2em;
+}
+
+.contentText p {
+    font-size: 1.5em;
+    padding-top: 2vh;
+}
+
+#content2 {
+    position: absolute;
+    top: 25vh;
+    left: 15vh;
+}
+
+#content3 {
+    position: absolute;
+    top: 50vh;
+    left: 15vh;
+}
+#C_Img1 {
+    width: 20vw;
+    height: 30vh;
+}
+#content4 {
+    position: absolute;
+    top: 85vh;
+    left: 7.5vw;
+}
+
+#content5 {
+    position: absolute;
+    top: 133vh;
+    left: 7.5vw;
+}
+.C_Img {
+    width: 20vw;
+    height: 30vh;
+}
+@media (max-width: 1920px) {
+    /* Adjustments for full HD screens */
+    #content1 {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        z-index: 2;
+        margin-top: 10vh;
+    }
+    #content2 {
+        position: absolute;
+        top: 25vh;
+        left: 15vh;
+        margin-top: 10vh;
+    }
+    #content3 {
+        position: absolute;
+        top: 50vh;
+        left: 15vh;
+        margin-top: 10vh;
+    }
+    #content4 {
+        position: absolute;
+        top: 85vh;
+        left: 7.5vw;
+        margin-top: 10vh;
+    }
+    #content5 {
+        position: absolute;
+        top: 133vh;
+        left: 7.5vw;
+        margin-top: 40vh;
+    }
+}
+
+@media (max-width: 1280px) {
+    /* Adjustments for smaller screens */
+    #vid {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjustments for tablet screens */
+    #vid {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjustments for mobile screens */
+    #vid {
+        width: 100%;
+        height: auto;
+    }
+}
