@@ -1,0 +1,67 @@
+#navContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Center items vertically */
+    padding-top: 1vh; /* Add padding inside the navbar */
+    padding-bottom: 1vh; 
+}
+
+#navContainer .blurry-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(50px); /* Apply backdrop blur effect */
+    z-index: -1;
+}
+
+.navbar-left {
+    position: relative;
+    flex: 1; /* Take up remaining space */
+    left: 2vw;
+    cursor: default;
+    padding-right: 3vw;
+}
+
+.navbar-left p {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2em;
+    color: black; /* Adjust text color */
+}
+
+.Navbar {
+    display: flex;
+    justify-content: flex-end; /* Align navbar items to the right */
+}
+
+.NavbarList {
+    position: relative;
+    right: 1vw;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display navbar items horizontally */
+    justify-content: flex-end; /* Align items to the right */
+}
+
+.NavbarItem:hover {
+    background-color: rgb(172, 172, 172);
+}
+
+.NavbarItem {
+    margin-left: 15px; /* Adjust spacing between navbar items */
+    padding: 10px;
+}
+
+.NavbarItem a {
+    text-decoration: none;
+    color: black; /* Adjust text color */
+    font-size: 1.2em;
+    padding: 10px 15px; /* Add padding around navbar items */
+}
